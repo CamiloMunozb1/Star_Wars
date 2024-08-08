@@ -1,4 +1,5 @@
-
+from funciones.info_personajes import info_personajes
+from funciones.personajes_completos import personajes_completos
 while True:
     print("""
           Enciclopedia Star Wars
@@ -9,9 +10,9 @@ while True:
     try:
         usuario = int(input("Ingresa una opcion: "))
         if usuario == 1:
-            print("Proxima funcionalidad.")
+            info_personajes()
         elif usuario == 2:
-            print("Proxima funcionalidad.")
+            personajes_completos()
         elif usuario == 3:
             print("Muchas gracias por visitarnos.")
             break
