@@ -1,3 +1,6 @@
+
+# IMPORTAR LAS FUNCIONES AL INDEX PARA SER USADAS 
+
 from funciones.Luke_Skywalker import info_luke
 from funciones.c_3po import info_c_3po
 from funciones.r2_d2 import info_r2_d2
@@ -11,7 +14,11 @@ from funciones.Obi_Wan import info_obi
 from funciones.personajes_completos import personajes_completos
 
 
+
 while True:
+
+    # MENU DE ENTRADA PARA EL USUARIO, PARA OBTENER INFORMACION DEL PERSONAJE EN UN ARCHIVO JSON
+
     print("""
           Enciclopedia Star Wars
           1.  informacion de Luke Skywalker.
@@ -28,7 +35,13 @@ while True:
           12. salir,
           """)
     try:
+
+        # ENTRADA DE USUARIO
+
         usuario = int(input("Ingresa una opcion: "))
+
+        # FUNCIONES IMPORTADAS AL INDEX 
+
         if usuario == 1:
             info_luke()
         elif usuario == 2:
@@ -52,8 +65,14 @@ while True:
         elif usuario == 11:
             personajes_completos()
         elif usuario == 12:
+
+            # MENSAJE DE SALIDA 
+
             print("Hasta la proxima.")
             break
+    
+    # MANEJOR DE ERRORES 
+
     except ValueError:
         print("Error de digitacion, vuelve a intentar.")
     
