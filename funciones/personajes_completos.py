@@ -19,7 +19,7 @@ def personajes_completos():
 
     peticion_json = respuesta.json()["results"]
 
-    # ITERAR EN EK ARCHIVO JSON 
+    # ITERAR EN EL ARCHIVO JSON 
 
     for personajes in peticion_json:
 
