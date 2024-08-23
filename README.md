@@ -5,8 +5,6 @@ Este proyecto es una aplicación en Python que interactúa con la API pública [
 ## Características
 
 - **Personajes**: Recupera y muestra detalles sobre personajes de Star Wars.
-- **Películas**: Proporciona información sobre las películas de la saga, como título, fecha de estreno, y director.
-- **Naves Espaciales**: Presenta detalles sobre las naves espaciales más icónicas del universo Star Wars.
 
 ## Tecnologías Utilizadas
 
